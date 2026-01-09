@@ -1,0 +1,83 @@
+<Window x:Class="ScreenSenderHub.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenSenderHub"
+        mc:Ignorable="d"
+        Title="ScreenSender Hub" Height="680" Width="980"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Border Background="#1E88E5" Padding="16">
+            <StackPanel>
+                <TextBlock Foreground="White" FontSize="22" FontWeight="Bold" Text="ScreenSender Hub" />
+                <TextBlock Foreground="White" Opacity="0.9" Text="LAN control server for Screen, Files, and Notes." />
+            </StackPanel>
+        </Border>
+
+        <TabControl Grid.Row="1" Margin="16">
+            <TabItem Header="Devices">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Vertical" Margin="0,0,0,12">
+                        <TextBlock FontSize="16" FontWeight="Bold" Text="Server" />
+                        <StackPanel Orientation="Horizontal" Margin="0,6,0,0">
+                            <TextBlock Text="Local IP:" VerticalAlignment="Center" />
+                            <TextBlock x:Name="LocalIpText" Margin="8,0,0,0" VerticalAlignment="Center" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                            <TextBlock Text="Control Port:" VerticalAlignment="Center" />
+                            <TextBox x:Name="ControlPortBox" Width="120" Margin="8,0,0,0" VerticalAlignment="Center" />
+                            <Button x:Name="RestartServerBtn" Content="Restart Server" Margin="12,0,0,0" />
+                        </StackPanel>
+                        <TextBlock x:Name="ServerStatusText" Margin="0,8,0,0" />
+                    </StackPanel>
+
+                    <GroupBox Header="Connected Devices" Grid.Row="1">
+                        <ListView x:Name="DevicesList" Margin="8">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="200" />
+                                    <GridViewColumn Header="Platform" DisplayMemberBinding="{Binding Platform}" Width="120" />
+                                    <GridViewColumn Header="IP" DisplayMemberBinding="{Binding Ip}" Width="140" />
+                                    <GridViewColumn Header="Port" DisplayMemberBinding="{Binding ControlPort}" Width="80" />
+                                    <GridViewColumn Header="Connected" DisplayMemberBinding="{Binding ConnectedAt}" Width="200" />
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Screen">
+                <StackPanel Margin="12">
+                    <TextBlock FontSize="16" FontWeight="Bold" Text="Screen Share" />
+                    <TextBlock Margin="0,6,0,0" Text="Phase 2: receive and display the phone screen stream here." />
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Files">
+                <StackPanel Margin="12">
+                    <TextBlock FontSize="16" FontWeight="Bold" Text="File Transfer" />
+                    <TextBlock Margin="0,6,0,0" Text="Phase 3: send and receive large files here." />
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Notes">
+                <StackPanel Margin="12">
+                    <TextBlock FontSize="16" FontWeight="Bold" Text="Notes" />
+                    <TextBlock Margin="0,6,0,0" Text="Phase 4: live notes synced across devices." />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

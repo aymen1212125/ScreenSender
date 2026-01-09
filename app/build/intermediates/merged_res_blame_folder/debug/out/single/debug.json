@@ -1,6 +1,18 @@
 [
     {
-        "merged": "com.example.screensender.app-merged_res-31:/layout_activity_main.xml.flat",
-        "source": "com.example.screensender.app-main-33:/layout/activity_main.xml"
+        "merged": "com.example.screensender.app-merged_res-38:/layout_fragment_devices.xml.flat",
+        "source": "com.example.screensender.app-main-40:/layout/fragment_devices.xml"
+    },
+    {
+        "merged": "com.example.screensender.app-merged_res-38:/layout_activity_main.xml.flat",
+        "source": "com.example.screensender.app-main-40:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.screensender.app-merged_res-38:/layout_item_device.xml.flat",
+        "source": "com.example.screensender.app-main-40:/layout/item_device.xml"
+    },
+    {
+        "merged": "com.example.screensender.app-merged_res-38:/layout_fragment_placeholder.xml.flat",
+        "source": "com.example.screensender.app-main-40:/layout/fragment_placeholder.xml"
     }
 ]

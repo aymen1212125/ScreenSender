@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.screensender.app-mergeDebugResources-29:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.example.screensender.app-mergeDebugResources-36:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
-                    "source": "/tmp/gradle-clean/caches/transforms-3/45533955110f59b81fa8e1aa54381241/transformed/appcompat-1.6.1/res/values-en-rIN/values-en-rIN.xml",
+                    "source": "/home/codespace/.gradle/caches/transforms-3/8000b6e89c40090548a1b9617dcc7ab0/transformed/appcompat-1.7.0/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/tmp/gradle-clean/caches/transforms-3/8a1cd6e55c1c0fc9931afae2c977f274/transformed/core-1.13.0/res/values-en-rIN/values-en-rIN.xml",
+                    "source": "/home/codespace/.gradle/caches/transforms-3/e7c2bfc810cd0f6a13ec3b9a3c4338a6/transformed/core-1.13.1/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

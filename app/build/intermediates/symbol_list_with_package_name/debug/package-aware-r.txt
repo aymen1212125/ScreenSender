@@ -3097,7 +3097,6 @@ id barrier
 id baseline
 id beginOnFirstDraw
 id beginning
-id bitrateEdit
 id blocking
 id bottom
 id bounce
@@ -3125,6 +3124,7 @@ id container
 id content
 id contentPanel
 id contiguous
+id controlStatusText
 id coordinator
 id cos
 id counterclockwise
@@ -3143,6 +3143,10 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id deviceConnectBtn
+id deviceDetail
+id deviceName
+id devicesRecycler
 id dialog_button
 id dimensions
 id direct
@@ -3212,7 +3216,7 @@ id indeterminate
 id info
 id invisible
 id inward
-id ipEdit
+id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -3228,6 +3232,12 @@ id linear
 id listMode
 id list_item
 id m3_side_sheet
+id mainPager
+id mainTabs
+id manualConnectBtn
+id manualDisconnectBtn
+id manualIpEdit
+id manualPortEdit
 id marquee
 id masked
 id match_parent
@@ -3330,7 +3340,9 @@ id pathRelative
 id peekHeight
 id percent
 id pin
-id portEdit
+id placeholderBody
+id placeholderTitle
+id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
@@ -3393,15 +3405,12 @@ id src_in
 id src_over
 id standard
 id start
-id startBtn
 id startHorizontal
 id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
-id statusText
 id stop
-id stopBtn
 id stretch
 id submenuarrow
 id submit_area
@@ -3602,8 +3611,11 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_devices
+layout fragment_placeholder
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_device
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
